@@ -123,3 +123,24 @@ while i <= 5:
     print(' ' * (5-i), end = '')
     print('*' * i)
     i += 1
+
+for letter in 'Python': # iterate every element
+    print(letter)
+
+for name in ['Ananya', 'Naman', 'Harshit', 'Madhav']: #create list using []
+    print(name)
+
+for name in [1, 2, 3, 4]: #create list using []
+    print(name)
+
+for i in range(10): # from 0 to 9
+    print(i)
+
+for i in range(5, 10): # from 5 to 9
+    print(i)
+
+for i in range(5, 10, 2): # from 5 to 9 increment 2
+    print(i)
+
+for i in range(10, 5, -1): # from 10 to 6 decreament -1
+    print(i)
