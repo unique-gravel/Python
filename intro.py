@@ -1,10 +1,11 @@
 from decimal import DivisionByZero
 from tkinter import BOTH
 
-
+#print
 print("Ananya Agrawal")
 print('*' * 10)
 
+#variables and datatypes
 val = 10
 rating = 4.9
 description = False
@@ -14,6 +15,7 @@ print(rating)
 print(description)
 print(name)
 
+#input
 name = input("What is your name : ")
 color = input("What is your favourite color : ")
 age = int(input("What is your age : "))
@@ -21,6 +23,7 @@ print("Hi " + name)
 print(f"{name} is {age} years old.")
 print(name + " likes " + color)
 
+#strings
 cat = "Ananya's cat"
 cat = 'Ananya has a "cat"'
 cat = "Ananya's " "cat"
@@ -48,6 +51,7 @@ print(message)
 msg = f'{first} {last} is a coder'
 print(msg) 
 
+#string functions
 name = "My name is Ananya Agrawal"
 print(len(name)) 
 print(name.upper())
@@ -57,6 +61,7 @@ print(name.find('Ananya')) ## returns the starting index
 print(name.replace('Agrawal', 'Gupta'))
 print('Ananya' in name) ## finds the occurence (T/F)
 
+#arithmatic operators
 print(10 / 3)
 print(10 // 3)
 print(10 % 3)
@@ -74,6 +79,7 @@ import math
 print(math.floor(2.9))
 print(math.ceil(2.9))
 
+#if conditions
 age = -1
 if age > 0:
     print("positive integer")
@@ -107,6 +113,7 @@ if num >= 7 or num <= -7:
 else:
     print("It is not a good number")
 
+#while loops
 i = 1
 while i <= 5:
     print(i)
@@ -124,6 +131,7 @@ while i <= 5:
     print('*' * i)
     i += 1
 
+#for loops
 for letter in 'Python': # iterate every element
     print(letter)
 
@@ -132,7 +140,7 @@ for name in ['Ananya', 'Naman', 'Harshit', 'Madhav']: #create list using []
 
 for name in [1, 2, 3, 4]: #create list using []
     print(name)
-
+ 
 for i in range(10): # from 0 to 9
     print(i)
 
@@ -144,3 +152,37 @@ for i in range(5, 10, 2): # from 5 to 9 increment 2
 
 for i in range(10, 5, -1): # from 10 to 6 decreament -1
     print(i)
+
+for i in range(4):
+    for j in range(3):
+        print(f'({i}, {j})')
+
+# PRINTING F SHAPE
+numbers = [5, 2, 5, 2, 2]
+for num in numbers:
+    for i in range(num):
+        print('X', end='')
+    print(' ')
+
+#lists
+names = ['Ananya', 'Madhav', 'Harshit', 'Naman']
+print(names)
+print(names[1])
+print(names[-1])
+print(names[2:])
+print(names[2:4])
+print(names[:4])
+print(names[:])
+
+nums = [1, 3, 7, 5, 4, 9]
+largest = 0
+for num in nums:
+    largest = max(num, largest)
+print(largest)
+
+#2D lists
+matrix = [ [1,2,3] , [4,5,6] , [7,8,9] ]
+print(matrix[0][1])
+
+#list methods
+nums = [1, 3, 7, 5, 4, 9]
