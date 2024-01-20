@@ -164,7 +164,7 @@ for num in numbers:
         print('X', end='')
     print(' ')
 
-#lists
+#lists - mutable
 names = ['Ananya', 'Madhav', 'Harshit', 'Naman']
 print(names)
 print(names[1])
@@ -198,3 +198,14 @@ nums.reverse()
 nums2 = nums.copy()
 nums.clear()
 
+#tuples - immutable
+nums = (1,2,3)
+print(nums.count(2))
+print(nums[0])
+
+#unpacking
+coordinates = (1,2,3)
+x = coordinates[0]
+y = coordinates[1]
+z = coordinates[2]
+x,y,z = coordinates # assigns the respective values
