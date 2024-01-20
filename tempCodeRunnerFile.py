@@ -1,5 +1,5 @@
-nums = [1, 3, 7, 5, 4, 9]
-largest = 0
-for num in nums:
-    largest = max(num, largest)
-print(largest)
+nums = [1, 3, 7, 5, 4, 9, 3]
+nums.append(20)
+nums.insert(0, 10)
+nums.remove(3) #remove the first oocurence
+print(nums)

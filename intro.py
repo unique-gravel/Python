@@ -185,4 +185,16 @@ matrix = [ [1,2,3] , [4,5,6] , [7,8,9] ]
 print(matrix[0][1])
 
 #list methods
-nums = [1, 3, 7, 5, 4, 9]
+nums = [1, 3, 7, 5, 4, 9, 3]
+nums.append(20)
+nums.insert(0, 10)
+nums.remove(3) #remove the first oocurence
+nums.pop() #removes last item
+nums.index(5) # index of first occurence
+print(3 in nums) #returns true or false
+print(nums.count(3))
+nums.sort()
+nums.reverse()
+nums2 = nums.copy()
+nums.clear()
+
