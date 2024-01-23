@@ -223,3 +223,41 @@ customer["birthday"] = "17 Sep"#add another key
 print(customer["name"])
 print(customer.get("day", "!")) #print ! if not available
 print(customer)
+
+#functions
+def greet_user():
+    print("Hello World")
+print("Start")
+greet_user()
+print("End")
+
+def greet_user(name):
+    print("Hello " + name)
+name = input("Enter your name: ")
+print("Start")
+greet_user(name)
+print("End")
+
+#keyword argument
+def greet_user(first_name, last_name):
+    print(f"Hello {first_name} {last_name}")
+print("Start")
+greet_user(last_name="Agrawal", first_name="Ananya")
+print("End")
+
+def area(length, bredth):
+    return length*bredth
+ans = area(50, 50)
+print(ans)
+
+#Exception handling
+#this means instead of crashing the program, print the eception message
+try:
+    age = int(input("Enter your age: "))
+    income = 20000
+    risk = income / age
+    print(age)
+except ValueError:
+    print("Invalid input")
+except ZeroDivisionError:
+    print("Cannot divided be zero")
