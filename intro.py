@@ -43,6 +43,8 @@ print(cat[:])
 print(cat[1:-1]) ## second letter till second lat character
 another = cat[:]
 print(another)
+words = cat.split(" ")
+print(words)
 
 first = 'Ananya'
 last = 'Agrawal'
@@ -138,8 +140,8 @@ for letter in 'Python': # iterate every element
 for name in ['Ananya', 'Naman', 'Harshit', 'Madhav']: #create list using []
     print(name)
 
-for name in [1, 2, 3, 4]: #create list using []
-    print(name)
+for num in [1, 2, 3, 4]: #create list using []
+    print(num)
  
 for i in range(10): # from 0 to 9
     print(i)
@@ -209,3 +211,15 @@ x = coordinates[0]
 y = coordinates[1]
 z = coordinates[2]
 x,y,z = coordinates # assigns the respective values
+
+#dictionaries
+customer = {
+    "name" : "Ananya Agrawal",
+    "age" : 21,
+    "item" : "bread"
+}
+customer["name"] = "Madhav Mishra" #change a value
+customer["birthday"] = "17 Sep"#add another key
+print(customer["name"])
+print(customer.get("day", "!")) #print ! if not available
+print(customer)
