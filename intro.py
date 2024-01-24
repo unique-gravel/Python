@@ -270,3 +270,12 @@ print(converters.lbs_to_kg(70))
 #packages
 from ecommerce import shipping
 shipping.calcShipping()
+
+#buildin modules
+import random
+for i in range(3):
+    print(random.randint(10,20))
+    
+members = ['Ananya', 'Harshit', "Naman"]
+leader = random.choice(members)
+print(leader)
