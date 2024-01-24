@@ -261,3 +261,12 @@ except ValueError:
     print("Invalid input")
 except ZeroDivisionError:
     print("Cannot divided be zero")
+
+#Modules
+import converters
+print(converters.kg_to_lbs(70))
+print(converters.lbs_to_kg(70))
+
+#packages
+from ecommerce import shipping
+shipping.calcShipping()
