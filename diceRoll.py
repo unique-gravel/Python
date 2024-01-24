@@ -11,5 +11,3 @@ class Dice:
 
 dice = Dice()
 print(dice.roll())
-
-print("aNANYA agRAWAL")
